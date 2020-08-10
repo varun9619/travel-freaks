@@ -54,19 +54,20 @@
         <script>
             // Create new wheel object specifying the parameters at creation time.
             let theWheel = new Winwheel({
-                'numSegments'  : 8,     // Specify number of segments.
+                'numSegments'  : 9,     // Specify number of segments.
                 'outerRadius'  : 212,   // Set outer radius so wheel fits inside the background.
                 'textFontSize' : 28,    // Set font size as desired.
                 'segments'     :        // Define segments including colour and text.
                 [
-                   {'fillStyle' : '#eae56f', 'text' : 'Name 1'},
-                   {'fillStyle' : '#89f26e', 'text' : 'Name 2'},
-                   {'fillStyle' : '#7de6ef', 'text' : 'Name 3'},
-                   {'fillStyle' : '#e7706f', 'text' : 'Name 4'},
-                   {'fillStyle' : '#eae56f', 'text' : 'Name 5'},
-                   {'fillStyle' : '#89f26e', 'text' : 'Name 6'},
-                   {'fillStyle' : '#7de6ef', 'text' : 'Name 7'},
-                   {'fillStyle' : '#e7706f', 'text' : 'Name 8'}
+                   {'fillStyle' : '#eae56f', 'text' : 'Name'},
+                   {'fillStyle' : '#89f26e', 'text' : 'Name'},
+                   {'fillStyle' : '#7de6ef', 'text' : 'Name'},
+                   {'fillStyle' : '#e7706f', 'text' : 'Name'},
+                   {'fillStyle' : '#eae56f', 'text' : 'Name'},
+                   {'fillStyle' : '#89f26e', 'text' : 'Name'},
+                   {'fillStyle' : '#7de6ef', 'text' : 'Name'},
+                   {'fillStyle' : '#7de6ef', 'text' : 'Name'},
+                   {'fillStyle' : '#e7706f', 'text' : 'Name'}
                 ],
                 'animation' :           // Specify the animation to use.
                 {
@@ -168,7 +169,7 @@
             function alertPrize(indicatedSegment)
             {
                 // Do basic alert of the segment text. You would probably want to do something more interesting with this information.
-                alert(indicatedSegment.text + " is selected");
+                alert(indicatedSegment.text + " is selected \nClick on start Game");
             }
 
 	    
